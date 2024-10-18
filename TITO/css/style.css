@@ -6,18 +6,28 @@
     scroll-behavior: smooth;
 }
 
-/* :root {
+:root {
     --black: rgb(0, 0, 0);
     --white: rgb(255, 255, 255);
-    --black_semitone: rgb(14, 14, 14);
-    --grey: rgb(51,51,51);
-    --light-grey: rgb(158, 158, 158);
-    --purple: rgb(114, 76, 122);
-} */
+} 
+
+
+
+
+
+
 
 
 
 /* HEADER */
+
+
+
+
+
+
+
+
 
 #menu_home {
     position: fixed;
@@ -37,7 +47,7 @@ header {
 #exhibit_video video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta el video para cubrir completamente el contenedor */
+    object-fit: fill; /* Ajusta el video para cubrir completamente el contenedor */
 }
 
 #exhibit_video img {
@@ -74,6 +84,8 @@ header .home {
 
 
 
+
+
 /* INFORMACION */
 
 
@@ -81,11 +93,9 @@ header .home {
 
 
 
+
+
 .informacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
     width: 100%;
     padding: 4em;
     height: 100%;
@@ -100,34 +110,30 @@ header .home {
 }
 
 .info_apartado {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding-top: 2em;
 }
 
 .informacion iframe {
-    align-items: center;
     width: 100%;
     height: 30vh;
 }
 
 .addtext {
     padding: 1.5em;
-    width: 50%;
+    width: 100%;
 }
 
 .informacion h2 {
     color: var(--white);
     font-size: 4em;
     font-weight: 800;
-    text-align: left;
+    text-align: center;
     
 }
 
 .informacion p{
     color: var(--white);
-    text-align: justify;
+    text-align: center;
     font-size: 1.4em;
     
 }
@@ -139,3 +145,56 @@ header .home {
     padding-left: 2em;
 }
 
+
+
+
+
+/* MARQUEE */
+
+
+
+
+
+
+
+.marquee {
+    background-color: var(--white);
+    height: 2.5em;
+    --gap: 0.5rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    font-size: 1.5em;
+  }
+
+  .marquee_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0;
+    min-width: 120%;
+    padding-top: 1.2em;
+  }
+
+  .marquee_content h1{
+    font-weight: lighter;
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+.enable-animation .marquee_content {
+    animation: scroll 10s linear infinite;
+  } 
+
+  .marquee--reverse .marquee_content {
+    animation-direction: reverse;
+  }
