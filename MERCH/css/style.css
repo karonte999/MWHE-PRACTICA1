@@ -21,35 +21,47 @@ header {
     align-items: center;
 }
 
-.navbar {
+/* .navbar {
     position: sticky;
     top: 0;
     z-index: 1;
-}
+} */
 
 .my-color-nav {
     color: blueviolet;
 }
 
-.my-text {
-    color: antiquewhite;
-}
-
+/* BOTÓN Y FORM */
 .my-color-btn {
-    color: blueviolet;
+    color: #ffffff;
+    background-color: #623CEA;
+    border-radius: 50px;
+}
+.form-control {
+    border-radius: 50px;
+    background-color: transparent;
+    box-shadow: none;
+    border-color: #623CEA;
 }
 
 .my-color-btn:hover {
-    color: rgb(107, 226, 43);
+    color: rgb(255, 255, 255);
+    background-color: #F086C3;
 }
 
-/* .my-navbar-color {
-    background: linear-gradient(blue, rgba(255, 192, 203, 0));
-} */
-
-.nav-link-hover-color {
-color: aqua;
+.nav-link {
+    color: #623CEA;
 }
+
+.nav-link:hover, .navlink.active {
+color: #F086C3;
+}
+
+
+.nav-link {
+    border-bottom: 0;
+}
+    
 
 
 
@@ -69,9 +81,6 @@ color: aqua;
     align-items: center;
 }
 
-/* .grid-wrapper > div:nth-child(even) {
-    opacity: 0 !important;
-} */
 
 .grid-wrapper > div > img {
     width: 100%;
