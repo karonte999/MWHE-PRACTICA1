@@ -7,19 +7,50 @@
     scroll-behavior: smooth;
 }
 
+header {
+    width: 100%;
+    height: 100vh;
+    top: calc(-100vh + 3em);
+    z-index: 1;
+    background-image: url(../MERCH_PICS/Magnum-Twojeys.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.my-navbar-color {
-    background-color: rgb(137, 34, 34) !important;
+.my-color-nav {
+    color: blueviolet;
 }
 
 .my-text {
     color: antiquewhite;
 }
+
+.my-color-btn {
+    color: blueviolet;
+}
+
+.my-color-btn:hover {
+    color: rgb(107, 226, 43);
+}
+
+/* .my-navbar-color {
+    background: linear-gradient(blue, rgba(255, 192, 203, 0));
+} */
+
+.nav-link-hover-color {
+color: aqua;
+}
+
 
 
 .grid-wrapper {
@@ -45,7 +76,7 @@
 .grid-wrapper > div > img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 5px;
 }
 
