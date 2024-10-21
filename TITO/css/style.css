@@ -104,7 +104,6 @@ header .home {
 
 
 .marquee {
-  background-color: var(--red_tone1);
   height: 2.5em;
   --gap: 0.5rem;
   position: relative;
@@ -168,14 +167,6 @@ header .home {
     background: none;
 }
 
-#gradient {
-  width: 100%;
-  height: auto;
-  padding: 0px;
-  margin: 0px;
-  opacity: 0.4;
-}
-
 .info_apartado {
     padding-top: 2em;
 }
@@ -191,7 +182,7 @@ header .home {
 }
 
 .informacion h2 {
-    color: var(--white);
+    color: var(--black);
     font-size: 4em;
     font-weight: 800;
     text-align: center;
@@ -199,7 +190,7 @@ header .home {
 }
 
 .informacion p{
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     font-size: 1.4em;
 }
@@ -225,7 +216,19 @@ header .home {
 
 
 .artistas {
+<<<<<<< Updated upstream
   
+=======
+  font-family: "Matemasie", sans-serif;
+>>>>>>> Stashed changes
+}
+
+#gradient {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.4;
 }
 
 
@@ -238,7 +241,6 @@ header .home {
 
 
 /* FORMULARIO */
-
 
 
 
