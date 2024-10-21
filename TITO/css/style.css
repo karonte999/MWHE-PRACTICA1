@@ -20,6 +20,7 @@
 
 body{
   background-color: black;
+  color: white;
 }
 
 
@@ -110,6 +111,10 @@ header .home {
 
 
 
+
+
+
+
 .marquee {
 	width: 100%;
 	height:120px;
@@ -123,10 +128,11 @@ header .home {
 	height:120px;
 	line-height:120px;
 	font-size:100px;
-  font-family: "Matemasie", sans-serif;
 	overflow:visible;
 	white-space:nowrap;
-  color: var(--purple);
+  font-family: "Matemasie", sans-serif;
+  color: var(--red);
+
 }
 .marquee span::before {
 	position:absolute;
@@ -135,21 +141,66 @@ header .home {
 	display:block;
 	width:100px;
 	height:48px;
-	line-height: 18px;
-	font-size:18px;
+	line-height:12px;
+	font-size:12px;
 	text-transform:uppercase;
 	text-align:right;
 	white-space:normal;
+  
 }
 .marquee.andrew span::before {
-	content:"IBIZA / FEST 2025 ";
+	content:"ART-FEST / IBIZA SUMMER / 2025 ";
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .marquee.marjorie span::before {
-	content:"IBIZA / FEST 2025 ";
+  content:"ART-FEST / IBIZA SUMMER / 2025 ";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.marquee {
+	width: 100%;
+	height:120px;
+	line-height:120px;
+	overflow: hidden;
+	padding:0;
+}
+
+.marquee1 span {
+	position:relative;
+	padding: 0 140px 0 0;
+	height:120px;
+	line-height:120px;
+	font-size:100px;
+	overflow:visible;
+	white-space:nowrap;
+  font-family: "Matemasie", sans-serif;
+  color: var(--purple);
+}
+.marquee1 span::before {
+	position:absolute;
+	top:20px;
+	left:-110px;
+	display:block;
+	width:100px;
+	height:48px;
+	line-height:12px;
+	font-size:12px;
+	text-transform:uppercase;
+	text-align:right;
+	white-space:normal;
+  
+}
+
+.marquee1.andrew span::before {
+	content:"ART-FEST / IBIZA SUMMER / 2025 ";
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+
+.marquee1.marjorie span::before {
+  content:"ART-FEST / IBIZA SUMMER / 2025 ";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -224,6 +275,7 @@ header .home {
   height: auto;
   padding: 0px;
   margin: 0px;
+  border-radius: 30px;
 }
 
 
@@ -236,6 +288,33 @@ header .home {
 
 
 /* FORMULARIO */
+
+
+
+
+
+
+
+
+
+
+
+.formulario h1{
+  color: var(--purple);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* SOCIAL */
 
 
 
