@@ -51,7 +51,7 @@ body{
 
 header {
     height: 100vh;
-    background-size: cover;
+    background-size: fill;
 }
 
 #exhibit_video {
@@ -111,8 +111,9 @@ header .home {
 
 
 
-
-
+.marquee1_ {
+  height: 50vh;
+}
 
 
 .marquee {
@@ -224,7 +225,10 @@ header .home {
 
 .informacion {
     width: 100%;
-    padding: 3em;
+    padding-top: 8em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 4em;
     height: 100%;
     background: none;
 }

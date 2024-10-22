@@ -22,7 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Matemasie&display=swap" rel="stylesheet">
     <!-- FAV ICON -->
 
-    <link href="MULTIMEDIA/logo_flowerpower.png" rel="icon" type="image/png">
+    <link href="MULTIMEDIA/logo_white.png" rel="icon" type="image/png">
 
     <!-- AOS JS -->
 
@@ -109,12 +109,14 @@
     <section id="artistas p-4">
 
 
-      
-
+  
         <div class="container text-center">
       
         <div id="gradient">
-            <div class="row g-2">
+            <div class="row g-2 py-3">
+              <div class="col-12">
+                <div class="p-3 display-4">Artistas</div>
+              </div>
               <div class="col-3">
                 <div class="p-3">INDIRA PAGANOTO</div>
               </div>
@@ -207,32 +209,76 @@
               </div>
               <div class="col-6">
                 <div class="p-3">
-                    <form>
-                        <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    <form class="row g-3 needs-validation" novalidate>
+                      <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="validationCustom01" value="Marcellus" required>
+                        <div class="valid-feedback">
+                          Looks good!
                         </div>
-                        <div class="mb-3">
-                          <label for="exampleInputPassword1" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="validationCustom02" value="Wallace" required>
+                        <div class="valid-feedback">
+                          Looks good!
                         </div>
-                        <div>   
-                        <fieldset>
-                              <div class="mb-3">
-                                <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                                <select id="disabledSelect" class="form-select">
-                                  <option>Disabled select</option>
-                                </select>
-                              </div>  
-                              <div class="mb-3">
-                                <label for="disabledSelect" class="form-label">Disabled select menu</label>
-                                <select id="disabledSelect" class="form-select">
-                                  <option>Disabled select</option>
-                                </select>
-                              </div>  
-                            </fieldset>
+                      </div>
+                      <div class="col-md-4">
+                        <label for="validationCustomUsername" class="form-label">Email Adress</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                          <div class="invalid-feedback">
+                            Please choose a username.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label for="validationCustom03" class="form-label">City</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid city.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Country</label>
+                        <select class="form-select" id="validationCustom04" required>
+                          <option selected disabled value="">Select...</option>
+                          <option>Bulgaria</option>
+                          <option>Germany</option>
+                          <option>France</option>
+                          <option>Italy</option>
+                          <option>Ireland</option>
+                          <option>Poland</option>
+                          <option>South Africa</option>
+                          <option>Spain</option>
+                          <option>Turkey</option>
+                          <option>UK</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                        <div class="invalid-feedback">
+                          Please provide a valid zip.
+                        </div>
                         </div> 
+                        <fieldset>
+                          <div class="mb-3 text-start py-2">
+                            <label for="Select" class="form-label"> Select your ticket </label>
+                            <select id="Select" class="form-select">
+                              <option>Select an option</option>
+                              <option>1 DAY</option>
+                              <option>2 DAYS</option>
+                              <option>VIP 1 DAY</option>
+                              <option>VIP 2 DAYS</option>
+                            </select>
+                          </div>  
+                        </fieldset>
                         <div class="mb-3 form-check">
                           <input type="checkbox" class="form-check-input" id="exampleCheck1">
                           <label class="form-check-label" for="exampleCheck1">Confirmo que he leído y acepto los términos y condiciones generales sobre la compra de entradas para Flower Power Fest.</label>
