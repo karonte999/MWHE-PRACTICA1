@@ -7,18 +7,56 @@
     scroll-behavior: smooth;
 }
 
+body {
+    /* background-image: url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
+    background-color: black;
+
+    /* background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #F086C3;
+    /* background-attachment: fixed; */
+}
+
+
+
+/* HEADER */
+
+/* .header {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+} */
+
 header {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     top: calc(-100vh + 3em);
     z-index: 1;
-    background-image: url(../MERCH_PICS/Magnum-Twojeys.webp);
+    /* background-image: url(../MERCH_PICS/Magnum-Twojeys.webp); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+Header > h1 {
+    font-family: "Matemasie", sans-serif;
+    font-size: 5em;
+    padding: 1em;
+    text-align: center;
+    color: #F086C3;
 }
 
 /* .navbar {
@@ -27,21 +65,23 @@ header {
     z-index: 1;
 } */
 
-.my-color-nav {
-    color: blueviolet;
-}
+
+
+
 
 /* BOTÓN Y FORM */
+
 .my-color-btn {
     color: #ffffff;
-    background-color: #623CEA;
+    background-color: #ffed2c;
     border-radius: 50px;
 }
+
 .form-control {
     border-radius: 50px;
     background-color: transparent;
     box-shadow: none;
-    border-color: #623CEA;
+    border-color: #ffed2c;
 }
 
 .my-color-btn:hover {
@@ -49,8 +89,14 @@ header {
     background-color: #F086C3;
 }
 
+
+
+
+
+/* NAV */
+
 .nav-link {
-    color: #623CEA;
+    color: #ffed2c;
 }
 
 .nav-link:hover, .navlink.active {
@@ -64,6 +110,9 @@ color: #F086C3;
     
 
 
+
+
+/* GRID */
 
 .grid-wrapper {
     padding: 1rem 0;
