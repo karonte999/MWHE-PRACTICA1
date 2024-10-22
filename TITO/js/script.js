@@ -2,7 +2,15 @@
 
 
 
+
+
+
+
+
 //MARQUEE
+
+
+
 
 
 
@@ -27,7 +35,7 @@ $('.marquee').marquee({
     startVisible: true,
 	duplicated:true,
 	pauseOnHover:true,
-	duration:95000,
+	duration:20000,
 	delayBeforeStart:100,
 	gap:0
 });
@@ -49,7 +57,7 @@ $('.marquee1').marquee1({
     startVisible: true,
 	duplicated:true,
 	pauseOnHover:true,
-	duration:10000,
+	duration:30000,
 	delayBeforeStart:100,
 	gap:0
 });
@@ -61,7 +69,16 @@ $('.marquee1').marquee1({
 
 
 
+
+
 //GRADIENTE
+
+
+
+
+
+
+
 
 
 
@@ -123,7 +140,7 @@ var colors = new Array(
     }
   }
   
-  setInterval(updateGradient,10);
+  setInterval(updateGradient,5);
   
 
 
