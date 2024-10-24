@@ -132,3 +132,23 @@ var colors = new Array(
 
 
 
+
+
+//GRADIENTE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
