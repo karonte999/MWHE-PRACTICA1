@@ -9,7 +9,7 @@
 
 body {
     /* background-image: url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
-    background-color:#ffed2c;
+    background-color:black;
 
     /* background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
 
@@ -156,3 +156,18 @@ color: #F086C3;
 
 /* MUSIC */
 
+#MERCH_MUSIC {
+    margin: 2em;
+    padding: 2em;
+}
+
+.mymusiccard {
+    background-color: transparent !important; /* Quita el color de fondo */
+    border: none !important; /* Quita el borde */;
+    color: whitesmoke;
+}
+
+.mymusiccard .card-title {
+    font-weight: 500;
+    color:#F086C3;
+}
