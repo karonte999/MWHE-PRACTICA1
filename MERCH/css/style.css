@@ -9,7 +9,7 @@
 
 body {
     /* background-image: url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
-    background-color: black;
+    background-color:#ffed2c;
 
     /* background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
 
@@ -59,6 +59,9 @@ Header > h1 {
     color: #F086C3;
 }
 
+.navbar-brand > img{
+    width: 2em;
+}
 /* .navbar {
     position: sticky;
     top: 0;
@@ -148,3 +151,8 @@ color: #F086C3;
     grid-column: span 2;
     grid-row: span 2;
 }
+
+
+
+/* MUSIC */
+
