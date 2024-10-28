@@ -20,6 +20,7 @@
 body{
   background-color: black;
   color: var(--white);
+  overflow-x: hidden;
 }
 
 
@@ -145,6 +146,7 @@ header .home {
     color: var(--pink);
     text-align: center;
     font-size: 1.4em;
+    padding-top: 1.5em;
 }
 
 
@@ -287,13 +289,15 @@ header .home {
 
 
 
+.container_artistas {
+  padding: 3em;
+}
 
 
 
-
-.artistas h1 {
+.container_artistas h1 {
   font-family: "Matemasie", sans-serif;
-
+  color: var(--black);
 }
 
 
@@ -318,13 +322,12 @@ header .home {
 
 
 
-.main {
+.main_footer {
   display: grid;
   grid-template-rows: 1fr 10rem auto;
   grid-template-areas: "main" "." "footer";
   overflow-x: hidden;
   background: var(--black);
-  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
 }
 .footer {

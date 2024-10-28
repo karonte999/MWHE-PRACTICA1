@@ -51,7 +51,9 @@ $('.marquee').marquee({
 
 
 
+
 //GRADIENTE
+
 
 
 
@@ -134,13 +136,7 @@ var colors = new Array(
 
 
 
-//GRADIENTE
-
-
-
-
-
-
+//CAROUSEL
 
 
 
