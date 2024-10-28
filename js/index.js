@@ -66,9 +66,9 @@ $('.marquee').marquee({
 
 
 var colors = new Array(
-    [252,235,67],
     [244,96,54],
-    [240,134,195],
+    [244,96,54],
+    [90,60,234],
     [90,60,234]);
   
   var step = 0;
@@ -122,7 +122,7 @@ var colors = new Array(
     }
   }
   
-  setInterval(updateGradient,5);
+  setInterval(updateGradient,8);
   
 
 
@@ -137,14 +137,6 @@ var colors = new Array(
 
 
 //CAROUSEL
-
-
-
-
-
-
-
-
 
 
 

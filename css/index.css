@@ -14,6 +14,7 @@
     --pink: rgb(240,134,195);
     --red: rgb(244,96,54);
     --yellow: rgb(252,235,67);
+    --green: rgb(82, 197, 126);
 } 
 
 
@@ -160,7 +161,24 @@ header .home {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* MARQUEE */
+
+
+
+
+
+
+
 
 
 
@@ -230,18 +248,24 @@ header .home {
 
 
 
-
-
-
-
 #gradient {
   width: 100%;
   height: auto;
   padding: 0px;
   margin: 0px;
-  border-radius: 30px;
 }
 
+
+.artistas_row {
+  color: black;
+  font-family: "Shadows Into Light";
+}
+
+
+.column_title h1{
+  font-family: "Matemasie", sans-serif;
+  color: var(--black);
+}
 
 
 
@@ -260,48 +284,38 @@ header .home {
 
 
 
+.container_formulario {
+  padding-right: 2em;
+  padding-left: 2em;
+}
 
 
-
-.formulario h1{
+.container_formulario h1{
   color: var(--purple);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ARTISTAS */
-
-
-
-
-
-
-
-
-.container_artistas {
-  padding: 3em;
-}
-
-
-
-.container_artistas h1 {
   font-family: "Matemasie", sans-serif;
-  color: var(--black);
+}
+
+
+.container_formulario p{
+  color: var(--pink);
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PARTNERS */
 
 
 
@@ -332,7 +346,7 @@ header .home {
 }
 .footer {
   z-index: 1;
-  --footer-background:#ED5565;
+  --footer-background:#a455ed;
   display: grid;
   position: relative;
   grid-area: footer;
@@ -368,6 +382,7 @@ header .home {
   color: #F5F7FA;
   text-decoration: none;
 }
+
 .footer .content b {
   color: white;
 }
@@ -386,12 +401,10 @@ header .home {
 .footer .content > div > div > * {
   margin-right: 0.5rem;
 }
-.footer .content > div .image {
+.footer .content img {
   align-self: center;
-  width: 4rem;
-  height: 4rem;
+  height: 80px;
   margin: 0.25rem 0;
-  background-size: cover;
   background-position: center;
 }
 
