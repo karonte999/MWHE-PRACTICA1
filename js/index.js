@@ -163,3 +163,80 @@ var colors = new Array(
 //     elSliderScroll.scrollLeft = elSliderScroll.scrollWidth;
 //   }
 // });
+
+
+
+
+
+
+
+
+const carousel = document.querySelector("[data-target='carousel']");
+const leftButton = document.querySelector("[data-action='slideLeft']");
+const rightButton = document.querySelector("[data-action='slideRight']");
+const cardWidth = carousel.querySelector("[data-target='card']").offsetWidth;
+let intervalId; // Store the interval ID for stopping the automatic slider
+
+
+// Function to slide the carousel to the right
+function slideRight() {
+  const firstCard = carousel.firstElementChild;
+  const lastCard = firstCard.nextElementSibling;
+  carousel.style.transition = "none"; // Disable transition for instant move
+  carousel.style.transform = `translateX(${cardWidth}px)`; // Move carousel one card width to the left
+  setTimeout(() => {
+    carousel.appendChild(firstCard); // Move the first card to the end
+    carousel.style.transition = "transform 0.5s ease-in-out"; // Re-enable transition
+    carousel.style.transform = "translateX(0)"; // Move carousel to original position
+  }, 10); // Wait for a short delay before re-enabling transition to prevent flickering
+}
+
+// Function to slide the carousel to the left
+// function slideLeft() {
+//   const firstCard = carousel.firstElementChild;
+//   const secondCard = firstCard.nextElementSibling;
+//   carousel.style.transition = "none"; // Disable transition for instant move
+//   carousel.style.transform = `translateX(${cardWidth}px)`; // Move carousel one card width to the left
+//   setTimeout(() => {
+//     carousel.appendChild(firstCard); // Move the first card to the end
+//     carousel.style.transition = "transform 0.5s ease-in-out"; // Re-enable transition
+//     carousel.style.transform = "translateX(0)"; // Move carousel to original position
+//   }, 50); // Wait for a short delay before re-enabling transition to prevent flickering
+// }
+
+// Function to start the automatic slider
+function startSlider() {
+  intervalId = setInterval(slideRight, 7000); // Slide every 5 seconds
+}
+
+// Function to stop the automatic slider
+function stopSlider() {
+  clearInterval(intervalId);
+}
+
+// Add click events
+leftButton.addEventListener("click", function() {
+  stopSlider(); // Stop the automatic slider when manually navigating
+  const firstCard = carousel.firstElementChild;
+  const lastCard = carousel.lastElementChild;
+  carousel.insertBefore(lastCard,firstCard); // Move the last card to the beginning
+  carousel.style.transition = "none"; // Disable transition for instant move
+  carousel.style.transform = `translateX(-${cardWidth}px)`; // Move carousel one card width to the left
+  setTimeout(() => {
+    carousel.style.transition = "transform 0.5s ease-in-out"; // Re-enable transition
+    carousel.style.transform = "translateX(0)"; // Move carousel to original position
+    startSlider(); // Restart the automatic slider after manual navigation
+  }, 75); // Wait for a short delay before re-enabling transition to prevent flickering
+});
+
+rightButton.addEventListener("click", function() {
+  stopSlider(); // Stop the automatic slider when manually navigating
+  slideRight();
+  startSlider(); // Restart the automatic slider after manual navigation
+});
+
+// Start the automatic slider initially
+startSlider();
+
+
+
