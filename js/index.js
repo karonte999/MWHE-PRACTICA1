@@ -136,7 +136,30 @@ var colors = new Array(
 
 
 
-//CAROUSEL
+//SLIDER
 
 
 
+
+
+
+
+
+
+
+// const elSlider = document.querySelector('.slider');
+// const elSliderScroll = document.querySelector('.slider .scrollable');
+// let sliderScroll = 0;
+// window.addEventListener('scroll', function (e) {
+//   const wh = window.innerHeight;
+//   const scrollTop = window.pageYOffset - elSlider.offsetTop;
+//   if (scrollTop <= 0) {
+//     elSliderScroll.scrollLeft = 0;
+//   } else if (scrollTop > 0) {
+//     const scrollH = elSliderScroll.scrollWidth - elSliderScroll.offsetWidth;
+//     const ratio = (scrollTop) / (elSlider.offsetHeight - window.innerHeight);
+//     elSliderScroll.scrollTo(scrollH * ratio, 0);
+//   } else {
+//     elSliderScroll.scrollLeft = elSliderScroll.scrollWidth;
+//   }
+// });

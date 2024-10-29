@@ -313,9 +313,52 @@ header .home {
 
 
 
-
-
 /* PARTNERS */
+
+
+
+
+
+
+
+/* 
+
+
+.slider {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 10rem;
+}
+.slider .scrollable {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+.slider .scrollable-container {
+  display: flex;
+  align-items: center;
+}
+
+.slider img {
+  flex-shrink: 0;
+  margin: 0 2rem;
+  max-height: 90vh;
+  max-width: none;
+}
+
+.js .slider {
+  height: 600vh;
+}
+
+.js .slider .scrollable {
+  overflow: hidden;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+ */
+
 
 
 
@@ -327,6 +370,12 @@ header .home {
 
 
 /* FOOTER */
+
+
+
+
+
+
 
 
 
