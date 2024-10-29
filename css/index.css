@@ -293,11 +293,13 @@ header .home {
 .container_formulario h1{
   color: var(--purple);
   font-family: "Matemasie", sans-serif;
+  padding-bottom: 1.2em;
 }
 
 
 .container_formulario p{
   color: var(--pink);
+  padding-left: 2em;
 }
 
 

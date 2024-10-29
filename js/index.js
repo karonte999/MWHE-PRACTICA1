@@ -184,7 +184,7 @@ function slideRight() {
 
 // Function to start the automatic slider
 function startSlider() {
-  intervalId = setInterval(slideRight, 2500); // Slide every 5 seconds
+  intervalId = setInterval(slideRight, 2100); // Slide every 5 seconds
 }
 
 // Function to stop the automatic slider
