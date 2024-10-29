@@ -387,31 +387,31 @@ header .home {
   display: inline-block;
   border-radius: 8px;
 }
-.card img { width: 100%; height: auto; border-radius: 8px; }
+.card img { 
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+
 .slider-padding { 
   position: absolute; 
   color: black; 
   top: 0;
   font-size: 24px;
   font-weight: 600;
-/*   width: 28%; */ width: 80%;
+/*   width: 28%; */ 
+  width: 80%;
   padding: 0 30px;
 }
+
 .arrow-icon-left { 
-  border: none; 
-  padding: 16px 20px; 
-  border-radius: 50%; 
-  margin-left: 20px; 
-  background-color: white; 
+  display: none;
 }
 
 
 .arrow-icon-right { 
-  border: none; 
-  padding: 16px 20px; 
-  border-radius: 50%;  
-  margin-right: 20px; 
-  background-color:white; 
+  display: none;
 }
 
 

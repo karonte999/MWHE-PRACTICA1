@@ -147,28 +147,6 @@ var colors = new Array(
 
 
 
-// const elSlider = document.querySelector('.slider');
-// const elSliderScroll = document.querySelector('.slider .scrollable');
-// let sliderScroll = 0;
-// window.addEventListener('scroll', function (e) {
-//   const wh = window.innerHeight;
-//   const scrollTop = window.pageYOffset - elSlider.offsetTop;
-//   if (scrollTop <= 0) {
-//     elSliderScroll.scrollLeft = 0;
-//   } else if (scrollTop > 0) {
-//     const scrollH = elSliderScroll.scrollWidth - elSliderScroll.offsetWidth;
-//     const ratio = (scrollTop) / (elSlider.offsetHeight - window.innerHeight);
-//     elSliderScroll.scrollTo(scrollH * ratio, 0);
-//   } else {
-//     elSliderScroll.scrollLeft = elSliderScroll.scrollWidth;
-//   }
-// });
-
-
-
-
-
-
 
 
 const carousel = document.querySelector("[data-target='carousel']");
@@ -206,7 +184,7 @@ function slideRight() {
 
 // Function to start the automatic slider
 function startSlider() {
-  intervalId = setInterval(slideRight, 7000); // Slide every 5 seconds
+  intervalId = setInterval(slideRight, 2500); // Slide every 5 seconds
 }
 
 // Function to stop the automatic slider
