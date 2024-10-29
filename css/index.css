@@ -21,7 +21,7 @@
 body{
   background-color: black;
   color: var(--white);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 
