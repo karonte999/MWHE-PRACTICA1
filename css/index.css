@@ -254,6 +254,7 @@ header .home {
 .container_artistas{
   padding-left: 3em;
   padding-right: 3em;
+  padding-bottom: 3em;
 }
 
 #gradient {
@@ -308,7 +309,7 @@ header .home {
 .container_formulario {
   padding-right: 3.5em;
   padding-left: 3.5em;
-
+  padding-top: 3em;
 }
 
 
