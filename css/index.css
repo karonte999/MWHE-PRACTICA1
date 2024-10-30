@@ -377,7 +377,7 @@ header .home {
   background-color: var(--red);
   width: 300px;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 42px;
 }
 
 .product-intro h2 { 
