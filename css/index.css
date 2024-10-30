@@ -263,6 +263,7 @@ header .home {
   padding: 0px;
   margin: 0px;
   border-radius: 15px;
+  opacity: 0.75;
 }
 
 .artistas_row {
