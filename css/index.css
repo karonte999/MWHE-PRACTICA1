@@ -164,6 +164,90 @@ header .home {
 
 
 
+/* EVENTOS */
+
+
+
+
+
+
+
+
+
+
+
+#eventos {
+  position: relative;
+  height: 60vh;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-attachment: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+}
+
+.carousel_items {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    border-radius: 24px;
+  }
+  
+.carousel_item {
+    position: relative;
+    min-width: 100%;
+    height: 60vh;
+    transition: all 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+.carousel_text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0.5rem 1rem;
+    border-radius: 42px;
+    background-color: rgb(255, 255, 255, 0.8);
+    color: var(--purple);
+    text-shadow: 1px 1px var(--black);
+    font-size: calc(1.5rem + 0.3vw);
+    font-weight: bolder;
+    font-family: "Shadows Into Light";
+  }
+
+
+  .item1 {
+    background-image: url(..//MULTIMEDIA/aleksandr-popov-R25Q-pAUeY8-unsplash.jpg);
+  }
+  .item2 {
+    background-image: url(..//MULTIMEDIA/antoine-j-A_0C42zmz1Q-unsplash.jpg);
+  }
+  .item3 {
+    background-image: url(..//MULTIMEDIA/danny-howe-bn-D2bCvpik-unsplash.jpg);
+  }
+  .item4 {
+    background-image: url(..//MULTIMEDIA/danny-howe-gwQAhisLnRA-unsplash.jpg);
+  }
+  .item5 {
+    background-image: url(..//MULTIMEDIA/dominic-hampton-SPuLUQDZp3k-unsplash.jpg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
