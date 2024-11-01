@@ -114,47 +114,25 @@ color: #F086C3;
 
 
 
+/* ARTIST OF THE MONTH */
 
-/* GRID */
-
-.grid-wrapper {
-    padding: 1rem 0;
-    margin: 3rem;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-auto-rows: 200px;
-    grid-auto-flow: dense;
+#artist {
+    background-color:#3a9736;
 }
 
-.grid-wrapper > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.grid-wrapper > div > img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
-.grid-wrapper .wide {
-    grid-column: span 2;
-}
-.grid-wrapper .tall {
-    grid-row: span 2;
-}
-.grid-wrapper .big {
-    grid-column: span 2;
-    grid-row: span 2;
+.custom-border {
+    border: 1px solid #060606; /* Color y grosor personalizado */
 }
 
 
 
-/* MUSIC */
+
+/* FEATURED PRODUCTS*/
+
+#MERCH_MUSIC  h2 {
+    text-align: center;
+    color: #ffffff;
+}
 
 #MERCH_MUSIC {
     margin: 2em;
@@ -172,10 +150,48 @@ color: #F086C3;
     color:#F086C3;
 }
 
-/* CLAIM */
-#CLAIM {
-    display: flex;
-    justify-content: center;
-    background-color: burlywood;
+
+
+
+/* TOP SELLERS */
+
+#top_sellers {
+    text-align: center;
+    color: #ffffff;
+    padding: 2em 4em;
+    margin: 2em;
+}
+
+#top_sellers h2 {
+text-align: center;
+padding: 1em;
+}
+
+
+/* MAKE YOUR OWN MERCH */
+
+#own_merch {
+    background-color: aqua;
     padding: 2em;
 }
+
+
+
+/* ESSENCE */
+#essence {
+    padding: 3em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#essence h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+/* THEY SAY */
+#they_say h1 {
+    text-align: center;
+}
+
