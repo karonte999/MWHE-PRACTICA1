@@ -219,6 +219,10 @@ header .home {
     font-family: "Shadows Into Light";
   }
 
+.carousel_text b{
+  font-family: "Matemasie", sans-serif;
+}
+
 
   .item1 {
     background-image: url(..//MULTIMEDIA/aleksandr-popov-R25Q-pAUeY8-unsplash.jpg);
