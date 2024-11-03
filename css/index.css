@@ -506,7 +506,6 @@ header .home {
   border-radius: 8px; 
 }
 
-
 .slider-padding { 
   position: absolute; 
   color: black; 
@@ -694,6 +693,32 @@ header .home {
   .informacion p{
       font-size: 1.2em;
   }  
+
+  #eventos {
+    position: relative;
+    height: 60vh;
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 4em;
+    top: 0;
+  }
+  
+  .carousel_items {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow: hidden;
+      border-radius: 24px;
+    }
+    
+  .carousel_item {
+      position: relative;
+      min-width: 100%;
+      height: 60vh;
+      transition: all 0.5s linear;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
   
     
   .carousel_text {
@@ -704,13 +729,77 @@ header .home {
     font-size: 0.8em;
     font-family: "Matemasie", sans-serif;
   }
+
+  .container_artistas{
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+
+  #gradient {
+    border-radius: 0;
+  }
+  
+  .artistas_row {
+    color: black;
+    font-size: 0.8em;
+  }
+  
+  .column_title h1{
+    font-family: "Matemasie", sans-serif;
+    color: var(--black);
+  }
+  
+  .column_title h1:hover {
+    color: var(--white);
+  }
+
+
+  .footer .content {
+    padding: 1rem;
+  }
+
+  .footer .content b {
+  color: var(--black);
+  font-size: 0.80em;
+}
+
+.footer .content a, body .footer .content p {
+  font-size: 0.70em;
+}
+
+.footer .content img {
+  display: none;
+}
+
+.footer .content p {
+  display: none;
+}
+
+.product-intro {
+  width: 300px;
+  height: 100px;
+  }
+
+  .product-image-slider { 
+    padding: 1em;
+  }
+
+  
   
   
   }
   
   @media screen and (max-width: 1000px) {
+     
+  .carousel_text {
+    font-size: calc(1rem + 0.3vw);
+  }
   
-   
+  .carousel_text b{
+    font-size: 1.2em;
+    font-family: "Matemasie", sans-serif;
+  }
+
   }
   
   @media screen and (max-width: 1400px) {
@@ -750,12 +839,14 @@ header .home {
     height: auto; */
 /*     width: 790px; */ /* width: 97%; */
     width: 740px;
-    height: auto;
+    height: 100px;
     margin: 0 auto;
   }
+
   .slider-padding {
     width: 80%;
   }
+
   .carousel { width: 360px; }
   .card { 
 /*     min-width: 410px;
@@ -763,6 +854,7 @@ header .home {
     min-width: 360px;
     height: 360px;
   }
+
     .card img { 
       width: 100%;
       height: 360px; 
