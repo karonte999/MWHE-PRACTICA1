@@ -63,7 +63,7 @@ header {
 #exhibit_video video {
     width: 100%;
     height: 100%;
-    object-fit: fill; /* Ajusta el video para cubrir completamente el contenedor */
+    object-fit: cover; /* Ajusta el video para cubrir completamente el contenedor */
 }
 
 #exhibit_video img {
@@ -205,6 +205,7 @@ header .home {
   
 .carousel_text {
     position: absolute;
+    text-align: center;
     bottom: 10%;
     left: 50%;
     transform: translate(-50%);
@@ -683,6 +684,13 @@ header .home {
 
 
 
+
+
+
+
+
+
+
 @media screen and (max-width: 700px) {
 
 
@@ -693,42 +701,11 @@ header .home {
   .informacion p{
       font-size: 1.2em;
   }  
-
-  #eventos {
-    position: relative;
-    height: 60vh;
-    padding-right: 1em;
-    padding-left: 1em;
-    padding-top: 4em;
-    top: 0;
-  }
-  
-  .carousel_items {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow: hidden;
-      border-radius: 24px;
-    }
-    
-  .carousel_item {
-      position: relative;
-      min-width: 100%;
-      height: 60vh;
-      transition: all 0.5s linear;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-    }
-  
     
   .carousel_text {
     font-size: calc(0.8rem + 0.3vw);
   }
   
-  .carousel_text b{
-    font-size: 0.8em;
-    font-family: "Matemasie", sans-serif;
-  }
 
   .container_artistas{
     padding-left: 0em;
@@ -745,7 +722,6 @@ header .home {
   }
   
   .column_title h1{
-    font-family: "Matemasie", sans-serif;
     color: var(--black);
   }
   
