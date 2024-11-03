@@ -678,6 +678,58 @@ header .home {
 
 
 
+/* MEDIA QUERIES */
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+
+  .informacion h2 {
+      font-size: 3em;
+  }
+  
+  .informacion p{
+      font-size: 1.2em;
+  }  
+  
+    
+  .carousel_text {
+    font-size: calc(0.8rem + 0.3vw);
+  }
+  
+  .carousel_text b{
+    font-size: 0.8em;
+    font-family: "Matemasie", sans-serif;
+  }
+  
+  
+  }
+  
+  @media screen and (max-width: 1000px) {
+  
+   
+  }
+  
+  @media screen and (max-width: 1400px) {
+  
+  
+  }
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) { 
   .product-image-slider { 
