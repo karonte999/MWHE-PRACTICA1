@@ -377,6 +377,15 @@ header .home {
 
 
 
+
+
+
+
+
+
+
+
+
 /* FORMULARIO */
 
 
@@ -759,6 +768,21 @@ header .home {
   .product-image-slider { 
     padding: 1em;
   }
+
+
+
+@media (max-width: 991px) {
+  .container_counter .col-md-4 {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: 50%;
+    margin: auto auto;
+  }
+  
+  container_counter .col-md-4:last-child {
+    border-bottom: 0px dashed black;
+  }
+}
 
   
   

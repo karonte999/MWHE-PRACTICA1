@@ -1,6 +1,10 @@
 
 //AOS LIBRARY
 
+
+
+
+
 window.onload = function() {
   "use strict"
   AOS.init({
@@ -185,6 +189,35 @@ var colors = new Array(
   
   setInterval(updateGradient,8);
   
+
+
+
+
+
+
+
+
+
+
+
+
+// CONTADORES
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
