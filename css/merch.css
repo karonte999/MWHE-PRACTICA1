@@ -8,17 +8,9 @@
 }
 
 body {
-    /* background-image: url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
     background-color:black;
-
-    /* background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #F086C3;
     /* background-attachment: fixed; */
-
 }
 
 h1 {
@@ -43,7 +35,7 @@ h1 {
 
 header {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     top: calc(-100vh + 3em);
     z-index: 1;
     /* background-image: url(../MERCH_PICS/Magnum-Twojeys.webp); */
@@ -54,6 +46,17 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.video-fondo {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para que cubra toda la sección */
+    z-index: -1; /* Coloca el video detrás del contenido */
 }
 
 Header > h1 {
@@ -165,14 +168,17 @@ color: #F086C3;
     color: #ffffff;
     padding: 2em 4em;
     margin: 2em;
+    background-image: url(MERCH_PICS/DoWhatMakesYouHappyLPRedVinyl_760x.png) ;
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 
 #top_sellers h2 {
-text-align: center;
-padding: 1em;
+    text-align: center;
+    padding: 1em;
 }
-
-
 
 
 
@@ -231,5 +237,13 @@ padding: 1em;
 
 .comments {
  align-content: center;
+ color: azure;
 }
 
+.comments p {
+    color: azure;
+}
+
+.comments h5 {
+    color: #ffed2c;
+}
