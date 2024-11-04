@@ -8,37 +8,22 @@
 }
 
 body {
-    /* background-image: url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
     background-color:black;
-
-    /* background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../MERCH_PICS/film_texture___grain_explosion_by_stephanepellennec_d37pwfa-fullview.jpg); */
-
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #F086C3;
-    /* background-attachment: fixed; */
 }
 
+h1 {
+    font-family: "Matemasie", sans-serif;
+    color: #ffffff;
+}
 
 
 /* HEADER */
 
-/* .header {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 20px;
-} */
 
 header {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     top: calc(-100vh + 3em);
     z-index: 1;
     /* background-image: url(../MERCH_PICS/Magnum-Twojeys.webp); */
@@ -49,6 +34,18 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+
+.video-fondo {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta el video para que cubra toda la sección */
+    z-index: -1; /* Coloca el video detrás del contenido */
 }
 
 Header > h1 {
@@ -56,7 +53,7 @@ Header > h1 {
     font-size: 5em;
     padding: 1em;
     text-align: center;
-    color: #F086C3;
+    color: #3a9736;
 }
 
 .navbar-brand > img{
@@ -160,27 +157,24 @@ color: #F086C3;
     color: #ffffff;
     padding: 2em 4em;
     margin: 2em;
+    background-image: url(MERCH_PICS/DoWhatMakesYouHappyLPRedVinyl_760x.png) ;
+    /* background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
 }
 
 #top_sellers h2 {
-text-align: center;
-padding: 1em;
-}
-
-
-/* MAKE YOUR OWN MERCH */
-
-#own_merch {
-    background-color: aqua;
-    padding: 2em;
+    text-align: center;
+    padding: 1em;
 }
 
 
 
 /* ESSENCE */
 #essence {
-    padding: 3em;
-    margin: 2em;
+    padding: 2em;
+    margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -190,8 +184,61 @@ padding: 1em;
     text-align: center;
 }
 
-/* THEY SAY */
-#they_say h1 {
-    text-align: center;
+.imagen-limitada {
+    max-width: 100%; /* Limita el ancho máximo */
+    max-height: 100%; /* Limita el alto máximo */
+    height: auto; /* Mantiene la proporción */
 }
 
+
+
+
+/* MAKE YOUR OWN MERCH */
+
+#own_merch {
+    background-color: #060606 ;
+    padding: 3em;
+    align-content: center;
+}
+
+.my-own-merch-all {
+    align-items: center;
+}
+
+.my-own-merch {
+    padding: 2em;
+}
+
+.my-own-merch p {
+    font-size: larger;
+}
+
+
+
+
+
+
+/* THEY SAY */
+
+#they_say {
+    padding: 2em;
+    margin: 2em;
+}
+
+#they_say h1 {
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.comments {
+ align-content: center;
+ color: azure;
+}
+
+.comments p {
+    color: azure;
+}
+
+.comments h5 {
+    color: #ffed2c;
+}
