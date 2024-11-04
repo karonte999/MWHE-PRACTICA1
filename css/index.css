@@ -607,10 +607,15 @@ header .home {
   padding: 2rem;
   background: var(--footer-background);
 }
-.footer .content a, body .footer .content p {
+.footer .content a, .footer .content p {
   color: var(--white);
   text-decoration: none;
 }
+
+.footer .content a:hover {
+  color: var(--black);
+}
+
 .footer .content b {
   color: var(--black);
 }
