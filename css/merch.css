@@ -18,8 +18,13 @@ body {
     background-repeat: no-repeat;
     color: #F086C3;
     /* background-attachment: fixed; */
+
 }
 
+h1 {
+    font-family: "Matemasie", sans-serif;
+    color: #ffffff;
+}
 
 
 /* HEADER */
@@ -168,12 +173,6 @@ padding: 1em;
 }
 
 
-/* MAKE YOUR OWN MERCH */
-
-#own_merch {
-    background-color: aqua;
-    padding: 2em;
-}
 
 
 
@@ -190,8 +189,47 @@ padding: 1em;
     text-align: center;
 }
 
+
+
+
+/* MAKE YOUR OWN MERCH */
+
+#own_merch {
+    background-color: #060606 ;
+    padding: 3em;
+    align-content: center;
+}
+
+.my-own-merch-all {
+    align-items: center;
+}
+
+.my-own-merch {
+    padding: 2em;
+}
+
+.my-own-merch p {
+    font-size: larger;
+}
+
+
+
+
+
+
 /* THEY SAY */
+
+#they_say {
+    padding: 2em;
+    margin: 2em;
+}
+
 #they_say h1 {
     text-align: center;
+    margin: 0 0 2em 0;
+}
+
+.comments {
+ align-content: center;
 }
 
