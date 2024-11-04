@@ -10,7 +10,6 @@
 body {
     background-color:black;
     color: #F086C3;
-    /* background-attachment: fixed; */
 }
 
 h1 {
@@ -21,17 +20,6 @@ h1 {
 
 /* HEADER */
 
-/* .header {
-    position: relative;
-    width: 100%;
-    height: 100vh; 
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 20px;
-} */
 
 header {
     width: 100%;
@@ -49,6 +37,7 @@ header {
 
 }
 
+
 .video-fondo {
     position: absolute;
     top:0;
@@ -64,7 +53,7 @@ Header > h1 {
     font-size: 5em;
     padding: 1em;
     text-align: center;
-    color: #F086C3;
+    color: #3a9736;
 }
 
 .navbar-brand > img{
@@ -184,8 +173,8 @@ color: #F086C3;
 
 /* ESSENCE */
 #essence {
-    padding: 3em;
-    margin: 2em;
+    padding: 2em;
+    margin: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,6 +182,12 @@ color: #F086C3;
 #essence h1 {
     font-size: 5em;
     text-align: center;
+}
+
+.imagen-limitada {
+    max-width: 100%; /* Limita el ancho máximo */
+    max-height: 100%; /* Limita el alto máximo */
+    height: auto; /* Mantiene la proporción */
 }
 
 
