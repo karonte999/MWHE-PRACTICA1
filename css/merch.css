@@ -469,6 +469,15 @@ header {
     color: #f0e086;
 }
 
+.mymusiccard img {
+  transition: transform 0.3s ease; /* Suaviza la transición */
+  width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+}
+ 
+.mymusiccard img:hover {
+  transform: scale(1.1); /* Aumenta la imagen un 10% */
+}
+
 
 
 
