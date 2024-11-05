@@ -55,28 +55,104 @@
 
 <body>
 
-    <header>
-        <div id="menu_home">
 
-            </div>
+   <!-- NAVBAR https://getbootstrap.com/docs/5.0/components/navbar/ -->
 
-            <section id="exhibit_video">
-               
-                <div class="video_expo">
-                    <video src="MULTIMEDIA/video_header_final.mp4" type="video/mp4" loop muted autoplay></video>
-                </div>
-           
-            </section>
+   <nav class="navbar fixed-top navbar-expand-md my-navbar-color justify-content-center" style="background: linear-gradient(180deg, rgb(0, 0, 0), transparent)">
+
+    <div class="container-fluid d-flex justify-content-center">
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand" href="index.html">
+        <img src="MERCH_PICS/logo_white.png" alt="Bootstrap" width="auto" height="auto">
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+
+        <ul class="navbar-nav d-flex nav-underline justify-content-center me-auto mb-2 mb-lg-0">
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Who are we?</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Upcoming events</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artists 2025</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Buy tickets</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our partners</a>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="merch.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Merch
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#MERCH_MUSIC">Featured products</a></li>
+
+                <li><a class="dropdown-item" href="#top_sellers">Top sellers</a></li>
+
+                <li><a class="dropdown-item" href="#own_merch">Make your own merch</a></li>
+
+                <li><a class="dropdown-item" href="#they_say">They say</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+          </li>
+
+          <!-- <li class="nav-item">
+              <a class="nav-link" aria-disabled="true">Disabled</a>
+          </li> -->
+        </ul>
+
+        <form class="d-flex" role="search">
+
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+
+          <button class="btn my-color-btn" type="submit">Search</button>
+
+        </form>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!------------- HEADER/ ARTIST OF THE MONTH ----------->
+
+
+  <header>
+
+    <video autoplay muted loop class="video-fondo">
+      <source src="MULTIMEDIA/video_header_final.mp4" type="video/mp4">
+    </video>
+
+    <div class="home">
             
-            <div class="home">
-            
-            <img src="MULTIMEDIA/logo_white.png">
-    
-            </div>
-    
-        </header>
+      <img src="MULTIMEDIA/logo_white.png">
 
-    </section>
+      </div>
+
+  </header>
+
 
     
 
