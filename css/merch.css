@@ -18,6 +18,35 @@ h1 {
 }
 
 
+
+
+
+
+
+/* MODAL */
+
+.modal-content {
+    background-color:#ffffff; /* Color de fondo del modal (gris oscuro) */
+    color:#F086C3; /* Color del texto */
+    border: 2px solid #ffed2c; /* Color del borde del modal (azul) */
+}
+
+.modal-header {
+    border-bottom: none
+}
+
+.btn-secondary {
+    background-color:#121212; /* Color de fondo del botón primario */
+    border-color:#ffffff; /* Color del borde del botón primario */
+}
+
+.btn-secondary:hover {
+    background-color:#ffed2c; /* Color de fondo en hover del botón primario */
+    border-color: #ffffff; /* Color del borde en hover del botón primario */
+}
+
+
+
 /* HEADER */
 
 
