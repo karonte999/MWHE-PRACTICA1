@@ -429,6 +429,13 @@ header {
     border: 1px solid #060606;
 }
 
+.my_container_ok {
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
 
 
 
