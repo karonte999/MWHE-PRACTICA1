@@ -660,7 +660,9 @@ header {
 }
 
 @media screen and (max-width: 772px) {
+
   .my-own-merch-all {
     flex-direction: column;
   }
+  
 }
