@@ -47,46 +47,59 @@
 
     <!-- NAVBAR https://getbootstrap.com/docs/5.0/components/navbar/ -->
 
-    <nav class="navbar fixed-top navbar-expand-md my-navbar-color" style="background: linear-gradient(180deg, rgb(0, 0, 0), transparent)">
+    <nav class="navbar fixed-top navbar-expand-md my-navbar-color justify-content-center" style="background: linear-gradient(180deg, rgb(0, 0, 0), transparent)">
 
-      <div class="container-fluid">
+      <div class="container-fluid d-flex justify-content-center">
 
-        <a class="navbar-brand" href="#">
-          <img src="MERCH_PICS/logo_white.png">
-        </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="navbar-brand" href="index.html">
+          <img src="MERCH_PICS/logo_white.png" alt="Bootstrap" width="auto" height="auto">
+        </a>
 
-          <ul class="navbar-nav nav-underline justify-content-center me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
 
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Flower Power</a>
-            </li>
+          <ul class="navbar-nav d-flex nav-underline justify-content-center me-auto mb-2 mb-lg-0">
+
 
             <li class="nav-item">
               <a class="nav-link" href="#">Who are we?</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Artists Lineup</a>
+              <a class="nav-link" href="#">Upcoming events</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Buy here</a>
+              <a class="nav-link" href="#">Artists 2025</a>
             </li>
 
+            <li class="nav-item">
+              <a class="nav-link" href="#">Buy tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Our partners</a>
+            </li>
+        
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="merch.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Merch
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#MERCH_MUSIC">Featured products</a></li>
+
+                  <li><a class="dropdown-item" href="#top_sellers">Top sellers</a></li>
+
+                  <li><a class="dropdown-item" href="#own_merch">Make your own merch</a></li>
+
+                  <li><a class="dropdown-item" href="#they_say">They say</a></li>
+
                   <li><hr class="dropdown-divider"></li>
+
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
             </li>
@@ -111,15 +124,30 @@
 
 
 
+
     <!------------- HEADER/ ARTIST OF THE MONTH ----------->
+
+
     <header>
 
-      <h1>
-        CHROMAKOPIA
-      </h1>
-      <p>
-        Get the newest from Tyler
-      </p>
+      <div>
+        <div class="wordCarousel">    
+            <div> 
+                <!--Use classes 2,3, or 4 to match the number of words --> 
+                <ul class="flip4"> 
+                    <li>TYLER, THE CREATOR</li>
+                    <li>CHROMAKOPIA</li>
+                    <li>NOID</li> 
+                    <li>HEY JANE</li>
+                </ul>
+            </div>  
+        </div>
+      </div>
+
+  
+      <a href="https://open.spotify.com/intl-es/album/0U28P0QVB1QRxpqp5IHOlH?si=QZrvEXVMQn6hV3Ug8SAESw" target="_blank">
+        <button type="button" class="btn custom-btn btn-lg">Listen the album here</button>
+      </a>
 
       <video autoplay muted loop class="video-fondo">
         <source src="MERCH_PICS/ST. CHROMA - Tyler, The Creator (1080p, h264, youtube).mp4" type="video/mp4">
@@ -128,30 +156,38 @@
     </header>
 
 
+   
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Launch demo modal
+    </button> -->
 
-    <!------------ 2ND MENU ---------->
-    <!-- <div>
-      <ul class="nav nav-underline justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Tees</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Hats</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Socks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Accesories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Music</a>
-        </li>
-      </ul>
-    </div> -->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <div class="modal-header">
+
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Be a part of our club!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Join our squad and be the ultimate insider! <br>
+                -New Drop <br>
+                -Upcoming Events <br>
+                -Exclusive Promotions <br>
+                -Behind Stories
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Save changes</button>
+                  <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+          </div>
+      </div>
+  </div>
 
 
     <!-- ARTIST OF THE MONTH -->
+
     <section id="artist">
 
       <div class="container text-center">
@@ -184,6 +220,8 @@
     </div>
       
     </section>
+
+
 
 
 
@@ -282,6 +320,9 @@
       </div>
 
     </section>
+
+
+
 
     <!-- THE TOP SELLERS -->
      

@@ -26,7 +26,6 @@ header {
     height: 80vh;
     top: calc(-100vh + 3em);
     z-index: 1;
-    /* background-image: url(../MERCH_PICS/Magnum-Twojeys.webp); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -48,22 +47,267 @@ header {
     z-index: -1; /* Coloca el video detrás del contenido */
 }
 
-Header > h1 {
-    font-family: "Matemasie", sans-serif;
-    font-size: 5em;
-    padding: 1em;
-    text-align: center;
-    color: #3a9736;
+
+
+
+/* CARRUSEL PALABRAS */
+
+
+
+
+.wordCarousel {
+    font-size: 4em;
+    font-weight: 100;
+    color:#ffffff;
 }
+
+  .wordCarousel div {
+    overflow: hidden;
+    position: relative;
+    float: right;
+    height: 100px;
+    padding-top: 10px;
+    margin-top: -10px;
+  }
+
+  .wordCarousel div ul {
+    padding-left: 0;
+  }
+
+  .wordCarousel div li {
+    color:#3a9736;
+    font-weight: 700;
+    /* padding: 0 10px; */
+    height: 45px;
+    margin-bottom: 45px;
+    display: block;
+    text-align: center;
+  }
+  
+  .flip2 {
+    -webkit-animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip2 6s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  
+  .flip3 {
+    -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  
+  .flip4 {
+    -webkit-animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+            animation: flip4 10s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
+  }
+  
+  @-webkit-keyframes flip2 {
+    0% {
+      margin-top: -180px;
+    }
+    5% {
+      margin-top: -90px;
+    }
+    50% {
+      margin-top: -90px;
+    }
+    55% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  
+  @keyframes flip2 {
+    0% {
+      margin-top: -180px;
+    }
+    5% {
+      margin-top: -90px;
+    }
+    50% {
+      margin-top: -90px;
+    }
+    55% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  @-webkit-keyframes flip3 {
+    0% {
+      margin-top: -270px;
+    }
+    5% {
+      margin-top: -180px;
+    }
+    33% {
+      margin-top: -180px;
+    }
+    38% {
+      margin-top: -90px;
+    }
+    66% {
+      margin-top: -90px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  @keyframes flip3 {
+    0% {
+      margin-top: -270px;
+    }
+    5% {
+      margin-top: -180px;
+    }
+    33% {
+      margin-top: -180px;
+    }
+    38% {
+      margin-top: -90px;
+    }
+    66% {
+      margin-top: -90px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  @-webkit-keyframes flip4 {
+    0% {
+      margin-top: -360px;
+    }
+    5% {
+      margin-top: -270px;
+    }
+    25% {
+      margin-top: -270px;
+    }
+    30% {
+      margin-top: -180px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    55% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  @keyframes flip4 {
+    0% {
+      margin-top: -360px;
+    }
+    5% {
+      margin-top: -270px;
+    }
+    25% {
+      margin-top: -270px;
+    }
+    30% {
+      margin-top: -180px;
+    }
+    50% {
+      margin-top: -180px;
+    }
+    55% {
+      margin-top: -90px;
+    }
+    75% {
+      margin-top: -90px;
+    }
+    80% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+}
+
+.custom-btn {
+    background-color: #000000; /* Color de fondo inicial */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Relleno del botón */
+    font-size: 1.2em; /* Tamaño del texto */
+    transition: background-color 0.3s ease; /* Efecto de transición */
+    border-radius: 50px;
+}
+
+.custom-btn:hover {
+    background-color:#3a9736; /* Color de fondo al hacer hover */
+    color: #ffffff; /* Color del texto al hacer hover */
+}
+
+
+
+
+
+
+
+/* NAVBAR */
 
 .navbar-brand > img{
     width: 2em;
 }
-/* .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-} */
+
+.navbar-nav .nav-link {
+    color:#ffed2c;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #3a9736;
+}
+
+.navbar-nav .nav-link:hover {
+    color:#ffffff;
+}
+
+
+.dropdown-menu {
+    background-color: #000000;
+    border-radius: 0%;
+
+}
+
+.dropdown-item {
+    color:#F086C3;
+}
 
 
 
@@ -93,21 +337,6 @@ Header > h1 {
 
 
 
-/* NAV */
-
-.nav-link {
-    color: #ffed2c;
-}
-
-.nav-link:hover, .navlink.active {
-color: #F086C3;
-}
-
-
-.nav-link {
-    border-bottom: 0;
-}
-    
 
 
 
@@ -241,4 +470,14 @@ color: #F086C3;
 
 .comments h5 {
     color: #ffed2c;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .wordCarousel {
+    font-size: 3em;
+    }
 }
