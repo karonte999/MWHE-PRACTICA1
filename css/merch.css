@@ -514,22 +514,12 @@ header {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* .my-card-top .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Color semi-transparente */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  color: #fff;
-  font-size: 1.5rem;
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* Para que no interfiera con el clic o el hover */
-} */
+
+
+
+
+
+
 
 /* Muestra el overlay cuando hay hover en la tarjeta */
 .my-card-top:hover .overlay {
@@ -653,7 +643,11 @@ header {
 
 
 
-
+@media screen and (max-width: 900px) {
+  .my-own-merch h1 {
+    font-size: 3em;
+  }
+}
 
 
 
@@ -663,4 +657,10 @@ header {
     .wordCarousel {
     font-size: 3em;
     }
+}
+
+@media screen and (max-width: 772px) {
+  .my-own-merch-all {
+    flex-direction: column;
+  }
 }
