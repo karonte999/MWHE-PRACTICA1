@@ -3,17 +3,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Chakra Petch', sans-serif;
+    font-family: "Pangolin", cursive;font-weight: 400;
+    font-style: normal;
     scroll-behavior: smooth;
 }
 
 body {
-    background-color:black;
-    color: #F086C3;
+    background-color:rgb(23, 23, 23);
+    color: #f0e086;
 }
 
 h1 {
-    font-family: "Matemasie", sans-serif;
+    
+    font-family: "Bahiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: #ffffff;
 }
 
@@ -103,6 +107,7 @@ header {
 /* CARRUSEL PALABRAS */
 
 .wordCarousel {
+
     font-size: 4em;
     font-weight: 100;
     color:#ffffff;
@@ -129,6 +134,10 @@ header {
     margin-bottom: 45px;
     display: block;
     text-align: center;
+  }
+
+  .flip4 li {
+    font-family: "Bahiana", sans-serif;
   }
   
   .flip2 {
@@ -434,6 +443,7 @@ header {
 #MERCH_MUSIC  h1 {
     /* text-align: center; */
     color: #ffffff;
+    font-size: 5em;
 }
 
 #MERCH_MUSIC {
@@ -449,7 +459,7 @@ header {
 
 .mymusiccard .card-title {
     font-weight: 500;
-    color:#F086C3;
+    color: #f0e086;
 }
 
 
@@ -479,7 +489,10 @@ header {
 #top_sellers h1 {
     text-align: center;
     padding: 1em;
+    color: #ffffff;
+    font-size: 5em;
 }
+
 
 
 
@@ -532,9 +545,11 @@ header {
     align-content: center;
 }
 
+
 .my-own-merch-all {
     align-items: center;
 }
+
 
 .my-own-merch {
     padding: 2em;
@@ -542,6 +557,11 @@ header {
 
 .my-own-merch p {
     font-size: larger;
+}
+
+.my-own-merch h1 {
+    color: #ffffff;
+    font-size: 5em;
 }
 
 
