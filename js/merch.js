@@ -21,12 +21,15 @@ function reveal() {
     }
 }
 
-// const myModal = document.getElementById('myModal')
-// const myInput = document.getElementById('myInput')
 
-// myModal.addEventListener('shown.bs.modal', () => {
-//   myInput.focus()
-// })
+// AOS-------------------------
+
+AOS.init();
+
+
+
+
+// VENTANA MODAL -------------------------
 
 const myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
   backdrop: 'static', // Evita que el modal se cierre al hacer clic fuera
@@ -48,15 +51,4 @@ document.getElementById('exampleModal').addEventListener('hidden.bs.modal', () =
   modalShown = true; // Mantiene la variable en true para no volver a mostrar el modal
 });
 
-
-
-//REVEAL ON SCROLL
-
-// ScrollReveal().reveal(".grid-wrapper > div", {
-//     delay: 200,
-//     distance: "50px",
-//     interval: 100,
-//     origin: "bottom",
-//     scale: 0.9,
-// });
 

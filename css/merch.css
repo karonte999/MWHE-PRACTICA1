@@ -384,7 +384,7 @@ header {
 
 
 
-/* BOTÓN Y FORM */
+/* BOTÓN Y FORM DEL NAV */
 
 .my-color-btn {
     color: #ffffff;
@@ -392,7 +392,7 @@ header {
     border-radius: 50px;
 }
 
-.form-control {
+.search_bar {
     border-radius: 50px;
     background-color: transparent;
     box-shadow: none;
@@ -467,6 +467,15 @@ header {
 .mymusiccard .card-title {
     font-weight: 500;
     color: #f0e086;
+}
+
+.mymusiccard img {
+  transition: transform 0.3s ease; /* Suaviza la transición */
+  width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+}
+ 
+.mymusiccard img:hover {
+  transform: scale(1.1); /* Aumenta la imagen un 10% */
 }
 
 
