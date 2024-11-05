@@ -110,36 +110,53 @@ body{
 
 
 
-
-
-
-.navbar-home .navbar-brand > img{
+.navbar-brand > img{
   width: 2em;
 }
 
-.navbar-home .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   color:#ffed2c;
   position: relative;
   padding: 5px 10px;
 }
 
-.navbar-home .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
   color: #3a9736;
 }
 
-.navbar-home .navbar-nav .nav-link:hover {
+.navbar-nav .nav-link:hover {
   color:#ffffff;
 }
 
 
-.navbar-home .dropdown-menu {
+.dropdown-menu {
   background-color: #000000;
   border-radius: 0%;
 
 }
 
-.navbar-home .dropdown-item {
+.dropdown-item {
   color:#F086C3;
+}
+
+/* BOTÓN Y FORM DEL NAV */
+
+.my-color-btn {
+  color: #ffffff;
+  background-color: #ffed2c;
+  border-radius: 50px;
+}
+
+.search_bar {
+  border-radius: 50px;
+  background-color: transparent;
+  box-shadow: none;
+  border-color: #ffed2c;
+}
+
+.my-color-btn:hover {
+  color: rgb(255, 255, 255);
+  background-color: #F086C3;
 }
 
 

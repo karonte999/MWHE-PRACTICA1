@@ -216,7 +216,7 @@ var colors = new Array(
 
 
 
-const animationDuration = 3000;
+const animationDuration = 9000;
 
 const frameDuration = 1000 / 60;
 
