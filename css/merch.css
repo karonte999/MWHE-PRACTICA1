@@ -23,6 +23,12 @@ h1 {
 
 
 
+
+
+
+
+
+
 /* MODAL */
 
 .modal-content {
@@ -47,8 +53,15 @@ h1 {
 
 
 
-/* HEADER */
 
+
+
+
+
+
+
+
+/* HEADER */
 
 header {
     width: 100%;
@@ -79,10 +92,15 @@ header {
 
 
 
+
+
+
+
+
+
+
+
 /* CARRUSEL PALABRAS */
-
-
-
 
 .wordCarousel {
     font-size: 4em;
@@ -307,6 +325,14 @@ header {
 
 
 
+
+
+
+
+
+
+
+
 /* NAVBAR */
 
 .navbar-brand > img{
@@ -342,6 +368,13 @@ header {
 
 
 
+
+
+
+
+
+
+
 /* BOTÓN Y FORM */
 
 .my-color-btn {
@@ -369,6 +402,14 @@ header {
 
 
 
+
+
+
+
+
+
+
+
 /* ARTIST OF THE MONTH */
 
 #artist {
@@ -376,16 +417,22 @@ header {
 }
 
 .custom-border {
-    border: 1px solid #060606; /* Color y grosor personalizado */
+    border: 1px solid #060606;
 }
+
+
+
+
+
+
 
 
 
 
 /* FEATURED PRODUCTS*/
 
-#MERCH_MUSIC  h2 {
-    text-align: center;
+#MERCH_MUSIC  h1 {
+    /* text-align: center; */
     color: #ffffff;
 }
 
@@ -408,24 +455,40 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* TOP SELLERS */
 
 #top_sellers {
     text-align: center;
-    color: #ffffff;
-    padding: 2em 4em;
-    margin: 2em;
-    background-image: url(MERCH_PICS/DoWhatMakesYouHappyLPRedVinyl_760x.png) ;
-    /* background-size: cover;
+    padding: 4em;
+    background-image: url(../MERCH_PICS/GRADIENT.jpg);
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    background-repeat: no-repeat; */
 }
 
-#top_sellers h2 {
+#top_sellers h1 {
     text-align: center;
     padding: 1em;
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -443,10 +506,20 @@ header {
 }
 
 .imagen-limitada {
-    max-width: 100%; /* Limita el ancho máximo */
-    max-height: 100%; /* Limita el alto máximo */
-    height: auto; /* Mantiene la proporción */
+    max-width: 100%; 
+    max-height: 100%; 
+    height: auto; /
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -476,11 +549,23 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
 /* THEY SAY */
 
 #they_say {
     padding: 2em;
-    margin: 2em;
+    background-image: url(../MERCH_PICS/Magnum-Twojeys.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #they_say h1 {
@@ -500,6 +585,13 @@ header {
 .comments h5 {
     color: #ffed2c;
 }
+
+
+
+
+
+
+
 
 
 
