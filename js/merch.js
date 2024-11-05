@@ -54,12 +54,3 @@ document.getElementById('exampleModal').addEventListener('hidden.bs.modal', () =
 
 
 
-
-
-
-
-
-// GSAP ----------------------------------------
-
-gsap.from(".mymusiccard", { duration: 2, x: 100, opacity: 0 });
-
