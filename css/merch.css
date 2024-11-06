@@ -438,6 +438,16 @@ header {
 
 
 
+/* RINA */
+
+.rina {
+  font-size: 5em;
+  padding: 0 0 1em 0;
+}
+
+.img_rina{
+  size: 2em;
+}
 
 
 
@@ -495,8 +505,8 @@ header {
 
 #top_sellers {
     text-align: center;
-    padding: 4em;
-    background-image: url(../MERCH_PICS/GRADIENT.jpg);
+    padding: 3em;
+    background-image: url(../MERCH_PICS/GRAIN_GRADIENT.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -504,7 +514,7 @@ header {
 
 #top_sellers h1 {
     text-align: center;
-    padding: 1em;
+    padding: 1em 0 1em 0;
     color: #ffffff;
     font-size: 5em;
 }
@@ -516,29 +526,37 @@ header {
 }
 
 .my-card-top img {
-  max-height: 300px;   /* Ajusta este valor según el tamaño que desees */
+  max-height: 400px; 
     object-fit: cover;
 }
 
+.my-card-top .card-img {
+  transition: transform 0.3s ease-out;
+}
 
 .my-card-top:hover .card-img {
   transform: scale(1.1);
-  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-overlay {
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  color: white;
+  opacity: 0;  /* El texto está oculto por defecto */
+  visibility: hidden;  /* No es visible al principio */
+  transition: opacity 0.3s ease, visibility 0.3s ease, background 0.3s ease;
+}
+
+/* Efecto cuando el mouse pasa por encima de la tarjeta */
+.card:hover .text-overlay {
+  opacity: 1;  /* El texto se hace visible */
+  visibility: visible;  /* Hace visible el texto */
 }
 
 
-
-
-
-
-
-
-
-
-/* Muestra el overlay cuando hay hover en la tarjeta */
-.my-card-top:hover .overlay {
-  opacity: 1;
-}
 
 
 
@@ -631,7 +649,8 @@ header {
 
 #they_say {
     padding: 2em;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.769)), url(../MERCH_PICS/Magnum-Twojeys.webp);
+    background-image: url(../MERCH_PICS/GRAIN_GRADIENT_2.webp);
+    /* linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.769)), */
     background-position: center;
     background-attachment: fixed;
 }
