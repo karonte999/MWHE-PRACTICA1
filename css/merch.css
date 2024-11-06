@@ -509,10 +509,24 @@ header {
     font-size: 5em;
 }
 
+
+.my-card-top{
+  border: none;
+  object-fit: cover;
+}
+
+.my-card-top img {
+  max-height: 300px;   /* Ajusta este valor según el tamaño que desees */
+    object-fit: cover;
+}
+
+
 .my-card-top:hover .card-img {
   transform: scale(1.1);
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+
 
 
 
@@ -569,10 +583,13 @@ header {
 
 
 
+
+
+
+
 /* MAKE YOUR OWN MERCH */
 
 #own_merch {
-    background-color: #060606 ;
     padding: 3em;
     align-content: center;
 }
@@ -614,15 +631,15 @@ header {
 
 #they_say {
     padding: 2em;
-    background-image: url(../MERCH_PICS/Magnum-Twojeys.webp);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.769)), url(../MERCH_PICS/Magnum-Twojeys.webp);
     background-position: center;
     background-attachment: fixed;
 }
 
 #they_say h1 {
     text-align: center;
-    margin: 0 0 2em 0;
+    padding: 1em 0 1em 0;
+    font-size: 5em;
 }
 
 .comments {
@@ -641,6 +658,154 @@ header {
 
 
 
+
+
+#test {
+  font-size: 3em;
+  text-align: right;
+  width: 850px;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.main_footer {
+  display: grid;
+  grid-template-rows: 1fr 10rem auto;
+  grid-template-areas: "main" "." "footer";
+  overflow-x: hidden;
+  background: var(--black);
+  font-family: "Open Sans", sans-serif;
+}
+.footer {
+  z-index: 1;
+  --footer-background:#a455ed;
+  display: grid;
+  position: relative;
+  grid-area: footer;
+  min-height: 12rem;
+}
+.footer .bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1rem;
+  background: var(--footer-background);
+  filter: url("#blob");
+}
+.footer .bubbles .bubble {
+  position: absolute;
+  left: var(--position, 50%);
+  background: var(--footer-background);
+  border-radius: 100%;
+  -webkit-animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+          animation: bubble-size var(--time, 4s) ease-in infinite var(--delay, 0s), bubble-move var(--time, 4s) ease-in infinite var(--delay, 0s);
+  transform: translate(-50%, 100%);
+}
+.footer .content {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 4rem;
+  padding: 2rem;
+  background: var(--footer-background);
+}
+.footer .content a, .footer .content p {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.footer .content a:hover {
+  color: var(--black);
+}
+
+.footer .content b {
+  color: var(--black);
+}
+.footer .content p {
+  margin: 0;
+  font-size: 0.75rem;
+}
+.footer .content > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .content > div > div {
+  margin: 0.25rem 0;
+}
+.footer .content > div > div > * {
+  margin-right: 0.5rem;
+}
+.footer .content img {
+  align-self: center;
+  height: 80px;
+  margin: 0.25rem 0;
+  background-position: center;
+}
+
+@-webkit-keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+
+@keyframes bubble-size {
+  0%, 75% {
+    width: var(--size, 4rem);
+    height: var(--size, 4rem);
+  }
+  100% {
+    width: 0rem;
+    height: 0rem;
+  }
+}
+@-webkit-keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+@keyframes bubble-move {
+  0% {
+    bottom: -4rem;
+  }
+  100% {
+    bottom: var(--distance, 10rem);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
 
 
 @media screen and (max-width: 900px) {
