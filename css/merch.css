@@ -1,9 +1,9 @@
-c
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Pangolin", cursive;font-weight: 400;
+    font-family: "Pangolin";font-weight: 400;
     font-style: normal;
     scroll-behavior: smooth;
 }
@@ -20,7 +20,6 @@ h1 {
     font-style: normal;
     color: #ffffff;
 }
-
 
 
 /* -------------------------------CSS DEL INDEX-------------------------- */
@@ -56,7 +55,7 @@ h1 {
   z-index: -1; /* Coloca el video detrás del contenido */
 }
 
- #exhibit_video img {
+#exhibit_video img {
   position: absolute;
   width: 50%;
   height: 50%;
@@ -90,6 +89,24 @@ h1 {
   padding-bottom: 1em;
 }
 
+.informacion h2 {
+  color: var(--red);
+  font-size: 4em;
+  font-weight: 800;
+  text-align: center; 
+  font-family: "Bahiana", sans-serif;
+  font-weight: 400;
+}
+
+.informacion p{
+  color: var(--purple);
+  text-align: center;
+  font-size: 1.6em;
+  padding-top: 1.2em;
+  /* font-family: "Shadows Into Light"; */
+}
+
+
 .info_apartado {
   padding-top: 2em;
 }
@@ -99,23 +116,8 @@ h1 {
   width: 100%;
 }
 
-.informacion h2 {
-  color: var(--red);
-  font-size: 4em;
-  font-weight: 800;
-  text-align: center; 
-  font-family: "Bahiana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
-.informacion p{
-  color: var(--purple);
-  text-align: center;
-  font-size: 1.6em;
-  padding-top: 1.2em;
-  font-family: "Shadows Into Light";
-}
+
 
 
 
@@ -280,7 +282,7 @@ h1 {
 
 .artistas_row {
   color: black;
-  font-family: "Shadows Into Light";
+  /* font-family: "Shadows Into Light"; */
 }
 
 .column_title h1{
