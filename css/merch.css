@@ -372,10 +372,12 @@ h1 {
 
 /* -------------COUNTER------------- */
 
+#counter {
+  padding: 2em;
+}
 
 .counter_wrapper{
   width:100%;
-  padding: 4em 0 0 0
 }
 
 .counter_wrapper .count_box{
@@ -446,6 +448,14 @@ h1 {
 
 /* -------------FORMULARIO----------- */
 
+
+/* #formulario_tickets {
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url(../MULTIMEDIA/chase-yi-Zkless2mnac-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .container_formulario {
   padding:4em;
@@ -1006,9 +1016,14 @@ header {
 /* RINA */
 
 #rina_sawayama {
-  margin: 4em;
-  padding: 4em;
+  padding: 8em;
   align-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image:
+  linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+  url(../MERCH_PICS/pexels-minan1398-1006098.jpg);
 }
 
 #rina_sawayama h1 {
@@ -1228,6 +1243,7 @@ header {
   background-color: antiquewhite;
   border-radius: 50px;
   width: 50%;
+  margin: 1em 0;
 }
 
 .img_merch_c{
@@ -1756,7 +1772,7 @@ header {
 
   #essence {
     margin: 0;
-    padding: 0em 2em 4em 2em;
+    padding: 4em 2em 0em 2em;;
   }
 
   #own_merch {

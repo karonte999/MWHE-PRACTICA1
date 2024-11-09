@@ -74,16 +74,6 @@ function costeTotal() {
 
 
 
-
-
-
-
-
-
-
-
-
-
 (function(f){f.fn.marquee=function(x){return this.each(function(){var a=f.extend({},f.fn.marquee.defaults,x),b=f(this),c,h,t,u,k,e=3,y="animation-play-state",n=!1,E=function(a,b,c){for(var e=["webkit","moz","MS","o",""],d=0;d<e.length;d++)e[d]||(b=b.toLowerCase()),a.addEventListener(e[d]+b,c,!1)},F=function(a){var b=[],c;for(c in a)a.hasOwnProperty(c)&&b.push(c+":"+a[c]);b.push();return"{"+b.join(",")+"}"},p={pause:function(){n&&a.allowCss3Support?c.css(y,"paused"):f.fn.pause&&c.pause();b.data("runningStatus",
 "paused");b.trigger("paused")},resume:function(){n&&a.allowCss3Support?c.css(y,"running"):f.fn.resume&&c.resume();b.data("runningStatus","resumed");b.trigger("resumed")},toggle:function(){p["resumed"==b.data("runningStatus")?"pause":"resume"]()},destroy:function(){clearTimeout(b.timer);b.find("*").andSelf().unbind();b.html(b.find(".js-marquee:first").html())}};if("string"===typeof x)f.isFunction(p[x])&&(c||(c=b.find(".js-marquee-wrapper")),!0===b.data("css3AnimationIsSupported")&&(n=!0),p[x]());else{var v;
 f.each(a,function(c,d){v=b.attr("data-"+c);if("undefined"!==typeof v){switch(v){case "true":v=!0;break;case "false":v=!1}a[c]=v}});a.speed&&(a.duration=a.speed*parseInt(b.width(),10));u="up"==a.direction||"down"==a.direction;a.gap=a.duplicated?parseInt(a.gap):0;b.wrapInner('<div class="js-marquee"></div>');var l=b.find(".js-marquee").css({"margin-right":a.gap,"float":"left"});a.duplicated&&l.clone(!0).appendTo(b);b.wrapInner('<div style="width:100000px" class="js-marquee-wrapper"></div>');c=b.find(".js-marquee-wrapper");
@@ -208,14 +198,6 @@ var colors = new Array(
 
 
 
-
-
-
-
-
-
-
-
 const animationDuration = 9000;
 
 const frameDuration = 1000 / 60;
@@ -275,10 +257,10 @@ const animateCountUp = el => {
 
 
 
-const carousel = document.querySelector("[data-target='carousel']");
+const carousel = document.querySelector("[data-target='carousel_partners']");
 const leftButton = document.querySelector("[data-action='slideLeft']");
 const rightButton = document.querySelector("[data-action='slideRight']");
-const cardWidth = carousel.querySelector("[data-target='card']").offsetWidth;
+const cardWidth = carousel.querySelector("[data-target='card_partner']").offsetWidth;
 let intervalId; // Store the interval ID for stopping the automatic slider
 
 
@@ -321,8 +303,8 @@ function stopSlider() {
 // Add click events
 leftButton.addEventListener("click", function() {
   stopSlider(); // Stop the automatic slider when manually navigating
-  const firstCard = carousel.firstElementChild;
-  const lastCard = carousel.lastElementChild;
+  const firstCard = carousel_partners.firstElementChild;
+  const lastCard = carousel_partners.lastElementChild;
   carousel.insertBefore(lastCard,firstCard); // Move the last card to the beginning
   carousel.style.transition = "none"; // Disable transition for instant move
   carousel.style.transform = `translateX(-${cardWidth}px)`; // Move carousel one card width to the left
