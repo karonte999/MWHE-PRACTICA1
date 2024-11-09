@@ -258,3 +258,17 @@ document.getElementById('exampleModal').addEventListener('hidden.bs.modal', () =
 
 
 
+
+
+
+
+
+
+//SLIDER
+
+
+
+
+
+
+
