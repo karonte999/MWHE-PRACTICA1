@@ -999,8 +999,12 @@ header {
 /* RINA */
 
 #rina_sawayama {
-    padding: 8em 4em 4em 4em;
-    align-content: center;
+  padding: 8em 4em 4em 4em;
+  align-content: center;
+}
+
+#rina_sawayama h1 {
+  font-size: 5em;
 }
 
 .my-own-merch-all-rina {
@@ -1031,7 +1035,7 @@ header {
 }
 
 #MERCH_MUSIC {
-    margin: 2em;
+    margin: 6em 4em;
     padding: 2em;
 }
 
@@ -1215,7 +1219,7 @@ header {
 /* THEY SAY */
 
 #they_say {
-    padding: 2em;
+    padding: 4em;
     background-image: url(../MERCH_PICS/GRAIN_GRADIENT_2.webp);
     /* linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.769)), */
     background-position: center;
@@ -1227,6 +1231,15 @@ header {
     padding: 1em 0 1em 0;
     font-size: 5em;
 }
+
+.comments {
+flex-direction: row;
+}
+
+#they_say img {
+  width: 50%;
+}
+
 
 .comments {
  align-content: center;
@@ -1243,15 +1256,11 @@ header {
 
 
 
-
-
-
 #test {
   font-size: 3em;
   text-align: right;
   width: 850px;
 }
-
 
 
 
