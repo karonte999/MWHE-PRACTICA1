@@ -999,7 +999,8 @@ header {
 /* RINA */
 
 #rina_sawayama {
-  padding: 8em 4em 4em 4em;
+  margin: 4em;
+  padding: 4em;
   align-content: center;
 }
 
@@ -1028,16 +1029,19 @@ header {
 
 /* FEATURED PRODUCTS*/
 
+
+#MERCH_MUSIC {
+  margin: 4em;
+  padding: 4em;
+}
+
+
 #MERCH_MUSIC  h1 {
     /* text-align: center; */
     color: #ffffff;
     font-size: 5em;
 }
 
-#MERCH_MUSIC {
-    margin: 6em 4em;
-    padding: 2em;
-}
 
 .mymusiccard {
     background-color: transparent !important; /* Quita el color de fondo */
@@ -1090,6 +1094,10 @@ header {
     font-size: 5em;
 }
 
+#top_sellers  h5{
+  font-family: "Bahiana", sans-serif;
+  font-size: 2em;
+}
 
 .my-card-top{
   border: none;
@@ -1100,6 +1108,7 @@ header {
   max-height: 400px; 
     object-fit: cover;
 }
+
 
 .my-card-top .card-img {
   transition: transform 0.3s ease-out;
@@ -1140,9 +1149,10 @@ header {
 
 
 
+
 /* ESSENCE */
 #essence {
-    padding: 2em;
+    padding: 6em 4em 2em;
     margin: 1em;
     display: flex;
     flex-direction: column;
@@ -1179,7 +1189,7 @@ header {
 /* MAKE YOUR OWN MERCH */
 
 #own_merch {
-    padding: 4em;
+    padding: 6em 4em 8em;
     align-content: center;
 }
 
@@ -1202,7 +1212,34 @@ header {
     font-size: 5em;
 }
 
+.my-own-merch .form-control{
+  background-color: transparent;
+  color: #ffffff;
+}
 
+.btn_merch {
+  background-color: antiquewhite;
+  border-radius: 50px;
+  width: 50%;
+}
+
+.img_merch_c{
+  padding: 2em
+}
+
+.img_merch_c img {
+  transform: rotate(-5deg);
+  border-radius: 10px;
+}
+
+.img_merch_c_2{
+  padding: 2em
+}
+
+.img_merch_c_2 img {
+  transform: rotate(5deg);
+  border-radius: 10px;
+}
 
 
 
@@ -1219,11 +1256,13 @@ header {
 /* THEY SAY */
 
 #they_say {
-    padding: 4em;
+    padding: 0 0 8em;
     background-image: url(../MERCH_PICS/GRAIN_GRADIENT_2.webp);
     /* linear-gradient(rgba(0, 0, 0, 0.769), rgba(0, 0, 0, 0.769)), */
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #they_say h1 {
@@ -1233,7 +1272,10 @@ header {
 }
 
 .comments {
-flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: azure;
 }
 
 #they_say img {
@@ -1241,19 +1283,13 @@ flex-direction: row;
 }
 
 
-.comments {
- align-content: center;
- color: azure;
-}
-
 .comments p {
     color: azure;
 }
 
 .comments h5 {
-    color: #ffed2c;
+    color:#121212;
 }
-
 
 
 #test {
@@ -1263,7 +1299,16 @@ flex-direction: row;
 }
 
 
+#they_say .card {
+  border: none;
+  align-items: center;
+}
 
+#they_say .card .card-footer {
+  border-radius: 50px;
+  width: 50%;
+  background-color: transparent;
+}
 
 
 
@@ -1692,9 +1737,18 @@ flex-direction: row;
 
 
 @media screen and (max-width: 900px) {
+
+
   .my-own-merch h1 {
     font-size: 3em;
   }
+  #essence h1 {
+    font-size: 3em;
+  }
+  #they_say h1 {
+    font-size: 3em;
+  }
+
 }
 
 
