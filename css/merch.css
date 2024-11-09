@@ -81,7 +81,7 @@ h1 {
 
 /* -----------INFORMACIÓN--------- */
 
-.informacion {
+/* .informacion {
   width: 100%;
   height: 100%;
   background: none;
@@ -90,7 +90,6 @@ h1 {
 }
 
 .informacion h2 {
-  color: var(--red);
   font-size: 4em;
   font-weight: 800;
   text-align: center; 
@@ -99,11 +98,11 @@ h1 {
 }
 
 .informacion p{
-  color: var(--purple);
+  color:#ffffff;
   text-align: center;
-  font-size: 1.6em;
+  font-size: 1.5em;
   padding-top: 1.2em;
-  /* font-family: "Shadows Into Light"; */
+  font-family: "Shadows Into Light";
 }
 
 
@@ -114,12 +113,37 @@ h1 {
 .addtext {
   padding-left: 1.5em;
   width: 100%;
+} */
+
+
+
+
+
+
+
+
+#information_home {
+  padding: 3em; /* Añade espaciado arriba y abajo */
 }
 
+.informacion_home h2 {
+  font-size: 4em;
+  text-align: center; 
+  font-family: "Bahiana", sans-serif;
+  margin-bottom: 20px;
+}
 
+.informacion_home p {
+  color:#ffffff;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
 
-
-
+.img_flower img {
+  max-width: 80%; /* Ajusta el tamaño de la imagen */
+  border-radius: 10px; /* Añade bordes redondeados, opcional */
+}
 
 
 
@@ -143,12 +167,11 @@ h1 {
   font-size: 4em;
   text-align: center;
   padding: 0.2em;
-  color: var(--yellow);
 }
 
-#eventos h1:hover{
-  color: var(--purple);
-}
+/* #eventos h1:hover{
+  color:#F086C3
+} */
 
 .carousel_items {
     display: flex;
@@ -174,10 +197,9 @@ h1 {
     left: 50%;
     transform: translate(-50%);
     padding: 0.5rem 1rem;
-    border-radius: 42px;
-    background-color: rgb(255, 255, 255, 0.8);
-    color: var(--purple);
-    text-shadow: 1px 1px var(--black);
+    border-radius: 30px;
+    background-color:#F086C3;
+    color:#000000;
     font-size: calc(1.5rem + 0.3vw);
     font-weight: bolder;
     font-family: "Shadows Into Light";
@@ -227,6 +249,7 @@ h1 {
 	line-height:120px;
 	overflow: hidden;
 	padding: 0;
+  color: #F086C3;
 }
 
 .marquee span {
@@ -264,6 +287,9 @@ h1 {
 
 /* -----------ARTISTAS-------------- */
 
+#artistas h1{
+  color: rgb(255, 255, 255);
+}
 
 .container_artistas{
   padding-left: 3em;
@@ -274,15 +300,19 @@ h1 {
 #gradient {
   width: 100%;
   height: auto;
-  padding: 0px;
-  margin: 0px;
   border-radius: 15px;
   opacity: 0.75;
+  padding-bottom: 1em;
 }
 
 .artistas_row {
-  color: black;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
   /* font-family: "Shadows Into Light"; */
+}
+
+.artistas_row:hover {
+  color:#f0e086
 }
 
 .column_title h1{
@@ -299,26 +329,65 @@ h1 {
 
 
 
+/*----------------- GALERÍA DE FOTOS -------------------*/
+
+
+.img-circle {
+  width: 100%;
+ /* Esto crea un contenedor cuadrado */
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 1em;
+}
+
+.img-circle img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para llenar el círculo sin deformarse */
+}
+
+.img-circle:hover {
+  transform: scale(1.1);
+}
+
+.container_artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3em;
+}
+
+
+
+
 
 /* -------------COUNTER------------- */
 
+
 .counter_wrapper{
   width:100%;
-  background:var(--black);
-  padding-top:20px;
+  padding: 4em 0 0 0
 }
 
 .counter_wrapper .count_box{
-  padding:50px 20px;
-  border:2px solid #2fc682;
+  padding:20px 20px;
+  border:1px solid #ffffff;
   border-radius:24px;
   text-align:center
 }
 
 .counter_wrapper .count_box h3{
-  font-size:40px;
+  font-size:3em;
   font-weight:600;
-  color:var(--white);
+  color:#f0e086;
   -webkit-transition:all .5s;
   -o-transition:all .5s;
   -ms-transition:all .5s;
@@ -326,12 +395,11 @@ h1 {
   transition:all .5s
 }
 
-.counter_wrapper .count_box h4{
-  font-family: "Shadows Into Light";
+.counter_wrapper h4{
+  /* font-family: "Shadows Into Light"; */
   font-size: 2em;
-  font-weight:300;
   text-transform:uppercase;
-  color: var(--white);
+  color:#F086C3;
   padding-top: 10px;
   -webkit-transition:all .5s;
   -o-transition:all .5s;
@@ -341,7 +409,7 @@ h1 {
 }
 
 .counter_wrapper .box_center{
-  background:linear-gradient(to bottom right,#000000,#2fc682);
+  background:linear-gradient(to bottom right,#000000,#f0e086);
   background-position:center 0;
   background-size:cover
 }
@@ -356,7 +424,7 @@ h1 {
 }
 
 .counter_wrapper .box_hover:hover{
-  background:linear-gradient(to bottom right,#000000,#2fc682);
+  background:linear-gradient(to bottom right,#000000,#f0e086);
   background-size:cover;
   -webkit-transition:all .3s ease;
   -moz-transition:all .3s ease;
@@ -379,9 +447,7 @@ h1 {
 
 
 .container_formulario {
-  padding-right: 3.5em;
-  padding-left: 3.5em;
-  padding-top: 3em;
+  padding:4em;
 }
 
 
@@ -396,25 +462,31 @@ h1 {
 
 
 .container_formulario p{
-  color: var(--yellow);
-  padding-left: 1.5em;
+  color:#fff;
   font-family: "Shadows Into Light", cursive;
   font-size: 1.5em;
   font-weight: bolder;
 
 }
 
+.tickets-form {
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.form-control, .form-select {
+  color: #F086C3;
+}
 
 
 /* --------PARTNERS------- */
 
 .product-image-slider { 
   display: flex; 
-  align-items: left;
   flex-direction: column;
-  max-width: 300px;
+  /* max-width: 300px; */
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 4em;
 }
 
 .wrapper {
@@ -426,10 +498,8 @@ h1 {
 }
 
 .product-intro { 
-  background-color: var(--red);
-  width: 250px;
-  height: 250px;
-  border-radius: 42px;
+  text-align: center;
+  padding-bottom: 2em;
 }
 
 .product-intro h2 { 
@@ -928,13 +998,22 @@ header {
 
 /* RINA */
 
+#rina_sawayama {
+    padding: 8em 4em 4em 4em;
+    align-content: center;
+}
+
+.my-own-merch-all-rina {
+  align-items: center;
+}
+
 .rina {
   font-size: 5em;
   padding: 0 0 1em 0;
 }
 
-.img_rina{
-  size: 2em;
+.img_rina img {
+  width: 100%;
 }
 
 
@@ -1096,7 +1175,7 @@ header {
 /* MAKE YOUR OWN MERCH */
 
 #own_merch {
-    padding: 3em;
+    padding: 4em;
     align-content: center;
 }
 
